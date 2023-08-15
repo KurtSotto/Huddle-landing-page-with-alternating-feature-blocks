@@ -1,0 +1,494 @@
+body{
+    background-color: rgb(237, 251, 254);
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+/* typography */
+
+p,
+h1,
+h2{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1em;
+}
+
+header button p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.125rem;
+}
+
+/* header */
+header{
+    display: flex;
+    width: 95%;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 6em;
+}
+
+header img{
+    width: 35%;
+    max-width: 150px;
+    height: 20px;
+}
+
+header button{
+    background-color: white;
+    border: none;
+    padding: .5em 0;
+    width: 30%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    max-width: 130px;
+}
+
+header button p{
+    transition: color .30s;    
+}
+
+header button p:hover{
+    color: rgb(128, 137, 143);
+}
+
+/* main */
+main{
+    width: 100%;
+}
+
+/* section 1 */
+
+.section1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-inline: auto;
+    padding-bottom: 3.5em;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.left h1{
+    margin-bottom: 1em;
+}
+
+.description p{
+    margin-bottom: 1.34em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.left button,
+.absolute button{
+    width: 80%;
+    max-width: 250px;
+    background-color: rgb(254, 82, 192);
+    border: none;
+    padding: 1em 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity .30s;
+}
+
+.left button:hover,
+.absolute button:hover{
+    opacity: .5;
+}
+
+.left button p,
+.absolute button p{
+    font-size: .9rem;
+    font-weight: 600;
+    color: white;
+}
+
+.right img{
+    width: 100%;
+}
+
+/* section2 */
+.section2{
+    width: 100%;
+    background-color: white;
+    padding: 8em 0 15em 0;
+}
+
+
+article{
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+    width: 90%;
+    margin-inline: auto;
+    padding: 3em 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article img{
+    width: 100%;
+}
+
+article p{
+    color: hsl(208, 11%, 55%);
+    font-size: 1rem;
+}
+
+.article2,
+.article3{
+    margin-top: 4em;
+}
+
+.article2 p{
+    width: 95%;
+}
+
+.article3 p{
+    width: 93%;
+}
+
+/* footer*/
+footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 8em 1em;
+}
+
+.footer-logo img{
+    width: 187px;
+    margin-bottom: 1.5em;
+}
+
+footer p{
+    color: white;
+}
+
+/* button positioning */
+.footer-logo{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: -230px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+    background-color: white;
+    padding: 2.5em .3em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+}
+
+.absolute h1{
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+/* footer of the design*/
+.website-informations{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
+/* footer icons */
+.footer-icons,
+.column,
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.icon-container{
+    display: flex;
+    gap: 1.8em;
+}
+
+.icon-location .img{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.img img{
+    width: 20px;
+}
+
+.icon-container p,
+.footer-info p{
+    text-align: start;
+    line-height: 1.4em;
+}
+
+.icon-email{
+    align-items: baseline;
+}
+
+/* footer info */
+.column p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* footer social medias */
+.footer-social-medias{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.social-medias{
+    display: flex;
+    gap: 1.8em;
+    justify-content: center;
+}
+
+.fb, 
+.twitter,
+.instagram{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.fb img,
+.twitter img,
+.instagram img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 3rem;
+    padding: .5em;
+    filter: brightness(0) invert(1);
+    transition: filter .20s;
+}
+
+.fb img:hover,
+.twitter img:hover,
+.instagram img:hover{
+    filter: invert(45%) sepia(99%) saturate(1374%) hue-rotate(293deg) brightness(99%) contrast(103%);
+}
+
+.copyright p{
+    font-size: .8rem;
+}
+
+/* media query */
+@media (min-width: 769px){
+    body{
+        background-image: url(./images/bg-hero-desktop.svg);
+    }
+
+    header{
+        width: 90%;
+    }
+
+    header img{
+        height: auto;
+        width: 15%;
+        max-width: none;
+    }
+
+    header button{
+        max-width: 180px;
+        padding: .8em 0;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    /* section1 */
+    .section1{
+        flex-direction: row;
+    }
+
+    .left h1{
+        margin-top: 2.5em;
+    }
+
+    .left{
+        width: 41%;
+    }
+
+    .right{
+        width: 59%;
+    }
+
+    .left h1,
+    .description p{
+        text-align: start;
+    }
+
+    .button-container{
+        justify-content: start;
+    }
+
+    .button-container button{
+        padding: 1.3em 0;
+        max-width: 280px;
+    }
+
+    /* section2 */
+    article{
+        padding: 3em 2em 3em 6em;
+        gap: 10em;
+    }
+
+    .article1,
+    .article3{
+        flex-direction: row-reverse;
+    }
+
+    .text p,
+    .text h2{
+        text-align: start;
+    }
+
+    article p{
+        font-size: 1.125rem;
+    }
+
+    .article1 p{
+        width: 92%;
+    }
+
+    .article2{
+        flex-direction: row;
+    }
+
+    .article3 p{
+        width: 85%;
+    }
+
+    /* footer */
+    footer{
+        padding: 8em 4em 4em 5.5em;
+    }
+
+    .website-informations{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-icons{
+        width: 35%;
+    }
+
+    .footer-info{
+        flex-direction: row;
+        gap: 6em;
+        justify-content: space-between;
+    }
+
+    .footer-social-medias{
+        width: 21%;
+        justify-content: space-between;
+        gap: 12em;
+    }
+
+    .social-medias{
+        justify-content: start;
+    }
+
+    .copyright p{
+        text-align: start;
+    }
+
+    /* button positioning */
+    .absolute{
+        top: -255px;
+    }
+
+    .absolute h1{
+        font-size: 1.4rem;
+        margin-bottom: 1.2em;
+    }
+
+    .absolute button{
+        padding: 1.5em 0;
+        max-width: 280px;
+    }
+}
+
+/* 
+.footer-logo{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: -210px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 2.5em .3em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+}
+
+.absolute h1{
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+} */
