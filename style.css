@@ -89,6 +89,14 @@ main{
     padding-bottom: 3.5em;
 }
 
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
 .left h1{
     margin-bottom: 1em;
 }
@@ -241,6 +249,11 @@ footer p{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    align-items: start;
+}
+
+.column p{
+    display: inline-block;
 }
 
 .icon-container{
@@ -475,3 +488,33 @@ a:hover{
         max-width: 280px;
     }
 }
+
+/* 
+.footer-logo{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: -210px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 2.5em .3em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+}
+
+.absolute h1{
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+} */
